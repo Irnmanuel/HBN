@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- 顶部栏 -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="40dp"
+        android:fitsSystemWindows="true"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:popupTheme="@style/Widget.AppCompat.ActionBar">
+
+        <ImageView
+            android:id="@+id/boxMsgIconImg"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/box_message_icon"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#202530"
+            android:text="发现" />
+
+        <ImageView
+            android:id="@+id/boxMagIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/box_magnifier_icon" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/inBoxFindFragmentVpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+    <!--发现Fragment ViewPager上面四个按钮-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/boxFindTopTabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            app:tabBackground="@color/colorWhite"
+            app:tabTextColor="@color/boxTabUnSelectedGrey"
+            app:tabSelectedTextColor="@color/boxTabSelectedBlack"
+            app:tabIndicatorColor="#000000">
+        </android.support.design.widget.TabLayout>
+        <!--按钮下面ViewPager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/inBoxFindFragmentVp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<!--<RadioGroup-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="40dp"-->
+<!--android:background="#ffffff"-->
+<!--android:orientation="horizontal">-->
+<!--<RadioButton-->
+    <!--android:id="@+id/boxFindTopLineRadioBtn"-->
+    <!--android:checked="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:text="头条"-->
+    <!--android:gravity="center"-->
+    <!--style="@style/box_find_tab_top"/>-->
+<!--<RadioButton-->
+    <!--android:id="@+id/boxFindPubgRadioBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:text="绝地求生"-->
+    <!--android:gravity="center"-->
+    <!--style="@style/box_find_tab_top"/>-->
+<!--<RadioButton-->
+    <!--android:id="@+id/boxFindGameRecommendationRadioBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:text="游戏推荐"-->
+    <!--android:gravity="center"-->
+    <!--style="@style/box_find_tab_top"/>-->
+<!--<RadioButton-->
+    <!--android:id="@+id/boxFindHardwareRadioBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:text="硬件推荐"-->
+    <!--android:gravity="center"-->
+    <!--style="@style/box_find_tab_top"/>-->
+<!--</RadioGroup>-->

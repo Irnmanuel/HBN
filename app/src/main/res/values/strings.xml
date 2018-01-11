@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI</string>
+    <string name="box_bottom_find">UI</string>
+    <string name="box_bottom_lib">UI</string>
+    <string name="box_bottom_community">UI</string>
+    <string name="box_bottom_me">UI</string>
+</resources>

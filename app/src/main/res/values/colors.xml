@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSelectetDay">#C0C0C0</color>
+    <color name="colorGreen">#22ff00</color>
+    <color name="boxTabSelectedBlack">#14191E</color>
+    <color name="boxTabUnSelectedGrey">#898B8D</color>
+    <color name="boxBackgroundGray">#F1F2F3</color>
+    <color name="boxTextGray">#8C9196</color>
+</resources>
