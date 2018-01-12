@@ -29,7 +29,7 @@ class SplashActivity : AppCompatActivity(){
             override fun onAnimationStart(p0: Animation?) {}
 
             override fun onAnimationEnd(p0: Animation?) {
-                startActivity<VariousTests>()
+                startActivity<MainActivity>()
                 finish()
             }
         })
